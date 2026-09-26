@@ -1,0 +1,20 @@
+{
+  "_comment": "SYNTHETIC, hand-constructed fixture. We could not produce a real package with a failing or missing registry signature to capture from npm (that would require an actually-tampered or unsigned publish). This exists only to exercise the invalid-signature/missing-signature branches of the policy engine; the shape mirrors what npm audit signatures --json documents, not a real captured run.",
+  "invalid": [
+    {
+      "name": "totally-not-tampered",
+      "version": "1.0.0",
+      "location": "node_modules/totally-not-tampered",
+      "registry": "https://registry.npmjs.org/"
+    }
+  ],
+  "missing": [
+    {
+      "name": "ancient-unsigned-package",
+      "version": "0.0.1",
+      "location": "node_modules/ancient-unsigned-package",
+      "registry": "https://registry.npmjs.org/"
+    }
+  ],
+  "verified": []
+}

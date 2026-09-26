@@ -1,0 +1,68 @@
+{
+  "name": "pg-research",
+  "version": "1.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "pg-research",
+      "version": "1.0.0"
+    },
+    "node_modules/sigstore": {
+      "version": "2.3.1",
+      "resolved": "https://registry.npmjs.org/sigstore/-/sigstore-2.3.1.tgz",
+      "integrity": "sha512-8G+/XDU8wNsJOQS5ysDVO0Etg9/2uA5gR9l4ZwijjlwxBcrU6RPfwi2+jJmbP+Ap1Hlp/nVAaEO4Fj22/SL2gQ==",
+      "license": "Apache-2.0",
+      "dependencies": {
+        "@sigstore/bundle": "^2.3.2",
+        "@sigstore/core": "^1.0.0",
+        "@sigstore/protobuf-specs": "^0.3.2",
+        "@sigstore/sign": "^2.3.2",
+        "@sigstore/tuf": "^2.3.4",
+        "@sigstore/verify": "^1.2.1"
+      },
+      "engines": {
+        "node": "^16.14.0 || >=18.0.0"
+      }
+    },
+    "node_modules/@sigstore/core": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/@sigstore/core/-/core-1.1.0.tgz",
+      "integrity": "sha512-JzBqdVIyqm2FRQCulY6nbQzMpJJpSiJ8XXWMhtOX9eKgaXXpfNOF53lzQEjIydlStnd/eFtuC1dW4VYdD93oRg==",
+      "license": "Apache-2.0",
+      "engines": {
+        "node": "^16.14.0 || >=18.0.0"
+      }
+    },
+    "node_modules/fs-minipass": {
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/fs-minipass/-/fs-minipass-3.0.3.tgz",
+      "integrity": "sha512-XUBA9XClHbnJWSfBzjkm6RvPsyg3sryZt06BEQoXcF7EK/xpGaQYJgQKDJSUH5SGZ76Y7pFx1QBnXz09rU5Fbw==",
+      "license": "ISC",
+      "dependencies": {
+        "minipass": "^7.0.3"
+      },
+      "engines": {
+        "node": "^14.17.0 || ^16.13.0 || >=18.0.0"
+      }
+    },
+    "node_modules/lodash": {
+      "version": "4.18.1",
+      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.18.1.tgz",
+      "integrity": "sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==",
+      "license": "MIT"
+    },
+    "node_modules/some-transitive/node_modules/fs-minipass": {
+      "_comment": "hand-added: a second, older copy of fs-minipass nested under another dep, to exercise multi-version dedupe. Real shape, fabricated nesting location.",
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/fs-minipass/-/fs-minipass-2.1.0.tgz",
+      "integrity": "sha512-3JIeXpX9UdcCbF8h5FGF+wQm2Yh0ZuMHzMWTgtiNSvJ4WSzLLLaJnO/Wgobm5+CFkAM6UMHVKndZ2AElixTBTQ==",
+      "license": "ISC"
+    },
+    "node_modules/some-local-workspace-package": {
+      "_comment": "hand-added: a workspace/file: link, to exercise skip-on-link logic.",
+      "resolved": "packages/some-local-workspace-package",
+      "link": true
+    }
+  }
+}

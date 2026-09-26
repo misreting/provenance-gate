@@ -1,0 +1,53 @@
+{
+  "name": "provenance-gate",
+  "version": "0.1.0",
+  "description": "CI gate that enforces a policy on npm provenance attestations: fails a build when a dependency's SLSA build source repo isn't on your allowlist. npm ships provenance data; nothing in the default install flow reads it.",
+  "keywords": [
+    "npm",
+    "provenance",
+    "slsa",
+    "sigstore",
+    "supply-chain",
+    "supply-chain-security",
+    "attestation",
+    "audit",
+    "ci",
+    "security"
+  ],
+  "license": "MIT",
+  "author": "__AUTHOR__",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/__GH_OWNER__/provenance-gate.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "provenance-gate": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && chmod +x dist/cli.js",
+    "demo": "node examples/gate-demo.ts",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build && npm run test:dist",
+    "test:dist": "node --test test/smoke.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}
