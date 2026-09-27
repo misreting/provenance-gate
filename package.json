@@ -15,10 +15,10 @@
     "security"
   ],
   "license": "MIT",
-  "author": "__AUTHOR__",
+  "author": "provenance-gate",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/__GH_OWNER__/provenance-gate.git"
+    "url": "git+https://github.com/agentscope-ai-java/provenance-gate.git"
   },
   "type": "module",
   "engines": {
